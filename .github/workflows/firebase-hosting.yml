@@ -51,7 +51,7 @@ jobs:
 
       - name: Connect to Firebase
         
-        run: firebase login --service-account ${{ secrets.FIREBASE_SERVICE_ACCOUNT_EDUMAR_CRMEF }}
+        run: firebase login
 
       - name: Deploy to Firebase Hosting
         env:
