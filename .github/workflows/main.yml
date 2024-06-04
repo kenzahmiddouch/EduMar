@@ -35,4 +35,12 @@ jobs:
         
     - name: GitHub Action for pylint
       uses: cclauss/GitHub-Action-for-pylint@0.7.0
+
+    - name: Prettier Action
+      uses: creyD/prettier_action@v4.3
+
+    - name: Code quality exporter
+      uses: edgardleal/code-quality-to-spreadsheet-action@v1.0.5
+
+      
             
