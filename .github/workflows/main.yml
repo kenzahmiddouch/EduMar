@@ -47,9 +47,9 @@ jobs:
         name: build
         path: build/
 
-    - name: Set up Firebase CLI
-      uses: w9jds/firebase-action@v1
+    - name: Deploy to Firebase
+      uses: w9jds/firebase-action@master
       with:
-        args: deploy --only hosting
+       args: deploy --only hosting
       env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+       FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
