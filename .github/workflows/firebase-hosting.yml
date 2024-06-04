@@ -49,11 +49,11 @@ jobs:
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
 
-      - name: Set up Firebase authentication
-        run: |
-          echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT_EDUMAR_CRMEF }}" > "${HOME}/firebase-service-account.json"
+      - name: Connect to Firebase
+        
+        run: firebase login --service-account ${{ secrets.FIREBASE_SERVICE_ACCOUNT_EDUMAR_CRMEF }}
 
       - name: Deploy to Firebase Hosting
         env:
-          GOOGLE_APPLICATION_CREDENTIALS: "${HOME}/firebase-service-account.json"
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_EDUMAR_CRMEF }}
         run: firebase deploy --only hosting
