@@ -32,3 +32,7 @@ jobs:
       with:
         name: build
         path: build/
+        
+    - name: GitHub Action for pylint
+      uses: cclauss/GitHub-Action-for-pylint@0.7.0
+            
