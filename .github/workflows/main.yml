@@ -36,8 +36,8 @@ jobs:
     - name: GitHub Action for pylint
       run: pip install -r requirements.txt ; pylint **/*.py
 
-    - name: Prettier Action
-      uses: creyD/prettier_action@v4.3
+#    - name: Prettier Action
+#      uses: creyD/prettier_action@v4.3
 
 
 
