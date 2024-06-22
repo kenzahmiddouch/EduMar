@@ -1,0 +1,112 @@
+/* src/components/Dashboard.css */
+.dashboard {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .edit-profile {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  
+  .settings-logout {
+    margin-top: 20px;
+  }
+  
+  .settings, .logout {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    background-color: #6a1b9a;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .main-content {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .classes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .class-card {
+    width: calc(33.333% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .class-card .status {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .class-card .folder-icon {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
