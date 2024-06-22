@@ -6,24 +6,18 @@ import Dashboard from './components/Dashboard';
 
 function App() {
   return (
-    // <div className="App">
-    //   <Router>
-    //     <Routes>
-    //       {/* Define the route for the login page */}
-    //       <Route path="/login" element={<Login />} />
-    //       {/* Redirect to /login when the application starts */}
-    //       <Route path="*" element={<Navigate to="/login" />} />
-    //     </Routes>
-    //   </Router>
-    // </div>
-    <Router>
+   
+    
       <div className="App">
+        <Router>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/login" element={<Login />} />
           {/* Add more routes here for different classes if needed */}
         </Routes>
+        </Router>
       </div>
-    </Router>
+    
   );
 }
 
