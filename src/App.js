@@ -13,9 +13,9 @@ function App() {
       <div className="App">
         <Router>
         <Routes>
-        <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Dashboard />} />
-          
+        <Route path="/" element={<Login />} />
+        <Route path="/dashbaord" element={<Dashboard />} />
+        <Route path="/classroom" element={<AddCourse />} />
           <Route path="/addcourse" element={<AddCourse />} />
           {/* Add more routes here for different classes if needed */}
         </Routes>

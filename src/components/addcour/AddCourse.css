@@ -1,58 +1,170 @@
-.travaux-devoirs {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background-color: aliceblue;
-    width: 100%;
-    height: 100%;
-  }
-  body{
-    width: 100%;
-    height: 100%;
-  }
+/* src/components/classroom/ClassroomInterface.css */
+html, body , #root{
+  height: 100%;
+  width: 100%;
   
-  .create-devoir {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
+}
+.ClassroomInterface {
+  font-family: Arial, sans-serif;
   
-  .create-devoir input {
-    padding: 10px;
-    margin-right: 10px;
-    flex: 1;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+}
+
+.navbar {
+  display: flex;
+  background-color: #f1f3f4;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
   
-  .create-devoir button {
-    padding: 10px 20px;
-    background-color: #4285f4;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .create-devoir button:hover {
-    background-color: #357ae8;
-  }
-  
-  .devoirs-list {
-    margin-top: 20px;
-  }
-  
-  .devoir-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .devoir-item div {
-    font-size: 14px;
-  }
-  
-  .devoir-item .devoir-name {
-    font-weight: bold;
-  }
-  
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #030911;
+}
+
+.navbar button.active {
+  color: #1a73e8;
+  border-bottom: 2px solid #1a73e8;
+}
+
+.content {
+  padding: 20px;
+}
+
+.create-button-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.create-button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a73e8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.assignment-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.assignment-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.assignment-list .icon {
+  margin-right: 10px;
+}
+
+.assignment-list .title {
+  flex-grow: 1;
+}
+
+.assignment-list .date {
+  color: #5f6368;
+  font-size: 12px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.text-editor {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.toolbar {
+  background-color: #f1f3f4;
+  padding: 5px;
+}
+
+.toolbar button {
+  background: none;
+  border: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-actions button[type="submit"] {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.form-actions button[type="button"] {
+  background-color: #2c62a8;
+}

@@ -10,13 +10,17 @@ body {
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;  /* Added to center vertically */
     width: 100%;
-    max-width: 1000px; /* Reduced max-width for better centering */
-    height: auto; /* Changed from fixed height to auto */
+    max-width: 1000px;
+    height: 100vh;  /* Adjusted to make the container full height */
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
+    margin: auto; 
+     /* Added to center horizontally */
 }
 
 

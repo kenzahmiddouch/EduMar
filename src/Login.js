@@ -14,7 +14,7 @@ const LoginPage = () => {
     // Add your form submission logic here
 
     // Navigate to the Dashboard after form submission
-    navigate('/');
+    navigate('/dashbaord');
   };
 
   return (
