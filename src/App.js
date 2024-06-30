@@ -2,7 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
 import Login from './Login.js';
-import Dashboard from './components/Dashboard';
+import Dashboard from './components/dashboard/Dashboard.js';
+import AddCourse from './components/addcour/AddCourse.js';
+
 
 function App() {
   return (
@@ -11,8 +13,10 @@ function App() {
       <div className="App">
         <Router>
         <Routes>
+        <Route path="/login" element={<Login />} />
           <Route path="/" element={<Dashboard />} />
-          <Route path="/login" element={<Login />} />
+          
+          <Route path="/addcourse" element={<AddCourse />} />
           {/* Add more routes here for different classes if needed */}
         </Routes>
         </Router>

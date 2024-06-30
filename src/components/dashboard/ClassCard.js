@@ -5,7 +5,7 @@ import './ClassCard.css';
 
 const ClassCard = ({ className, deadline }) => {
   return (
-    <Link to={`/${className}`} className="class-card">
+    <Link to={`/addcourse`} className="class-card">
       <h3>{className}</h3>
       {deadline && <p>{deadline}</p>}
       <div className="status"></div>
