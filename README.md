@@ -1,3 +1,6 @@
+L’application web aura pour aider les enseignants à publier leurs cours et leurs compléments de cours,créer et publier des quiz ,fournir des analyses aux enseignants pour suivre et évaluer la progression de la classe ,mettre en place un système de suivi de la progression pour les  élèves afin qu'ils puissent savoir comment ils se débrouillent à l'école.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
