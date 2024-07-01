@@ -1,60 +1,58 @@
-Documentation Professionnelle pour l'Application Web Éducative
+## Introduction
+    L'application web éducative vise à fournir une plateforme intégrée pour les enseignants et les élèves. Elle permet aux enseignants de publier des cours et des compléments de cours, de créer et de publier des quiz, et de suivre et évaluer la progression des élèves grâce à des analyses détaillées. Pour les élèves, l'application offre des outils pour suivre les cours, pratiquer les leçons à travers des devoirs, passer des quiz, et interagir avec les enseignants pour clarifier leurs doutes.
 
-Introduction
-L'application web éducative vise à fournir une plateforme intégrée pour les enseignants et les élèves. Elle permet aux enseignants de publier des cours et des compléments de cours, de créer et de publier des quiz, et de suivre et évaluer la progression des élèves grâce à des analyses détaillées. Pour les élèves, l'application offre des outils pour suivre les cours, pratiquer les leçons à travers des devoirs, passer des quiz, et interagir avec les enseignants pour clarifier leurs doutes.
+### Fonctionnalités Clés
+## Gestion des Cours
+    Création de Cours: Les enseignants peuvent créer des cours et des compléments de cours, les organiser par sujets, et les publier pour les élèves.
+    Attribution des Cours: Les cours peuvent être attribués à des classes spécifiques pour une organisation structurée.
+    Gestion des Quiz et Devoirs
+    Création de Quiz: Les enseignants peuvent créer des quiz pour évaluer le niveau de compréhension des élèves.
+    Attribution de Devoirs: Les enseignants peuvent attribuer des devoirs pour aider les élèves à pratiquer les leçons.
+    Analyses et Suivi
+    Analyse de Progression: Fournir des analyses détaillées pour les enseignants afin de suivre la progression de chaque élève et de chaque classe.
+    Suivi des Élèves: Permettre aux élèves de suivre leur propre progression et de voir comment ils se débrouillent dans leurs études.
+    Interaction Élèves-Enseignants
+    Questions au Tuteur: Les élèves peuvent poser des questions aux tuteurs pour obtenir des explications supplémentaires.
+    Commentaires aux Professeurs: Les élèves peuvent envoyer des commentaires aux professeurs pour se renseigner sur divers aspects des cours.
+    Gestion des Utilisateurs
+    Création de Comptes: Les administrateurs peuvent créer des comptes utilisateurs et définir les autorisations d'accès.
+    Gestion des Classes: Les administrateurs peuvent créer et gérer des classes pour regrouper les élèves.
 
-Fonctionnalités Clés
-Gestion des Cours
-Création de Cours: Les enseignants peuvent créer des cours et des compléments de cours, les organiser par sujets, et les publier pour les élèves.
-Attribution des Cours: Les cours peuvent être attribués à des classes spécifiques pour une organisation structurée.
-Gestion des Quiz et Devoirs
-Création de Quiz: Les enseignants peuvent créer des quiz pour évaluer le niveau de compréhension des élèves.
-Attribution de Devoirs: Les enseignants peuvent attribuer des devoirs pour aider les élèves à pratiquer les leçons.
-Analyses et Suivi
-Analyse de Progression: Fournir des analyses détaillées pour les enseignants afin de suivre la progression de chaque élève et de chaque classe.
-Suivi des Élèves: Permettre aux élèves de suivre leur propre progression et de voir comment ils se débrouillent dans leurs études.
-Interaction Élèves-Enseignants
-Questions au Tuteur: Les élèves peuvent poser des questions aux tuteurs pour obtenir des explications supplémentaires.
-Commentaires aux Professeurs: Les élèves peuvent envoyer des commentaires aux professeurs pour se renseigner sur divers aspects des cours.
-Gestion des Utilisateurs
-Création de Comptes: Les administrateurs peuvent créer des comptes utilisateurs et définir les autorisations d'accès.
-Gestion des Classes: Les administrateurs peuvent créer et gérer des classes pour regrouper les élèves.
-
-User Stories
-Élèves
+## User Stories
+# Élèves
 En tant qu'élève, je veux accéder aux classes pour suivre les cours.
 En tant qu'élève, je veux faire des devoirs pour pratiquer la leçon.
 En tant qu’élève, je veux passer des quiz pour évaluer mon niveau d’apprentissage.
 En tant qu’élève, je veux questionner le tuteur pour trouver d'autres explications pour le cours.
 En tant qu’élève, je veux envoyer des commentaires aux professeurs pour me renseigner sur quelque chose.
-Enseignants
+# Enseignants
 En tant qu'enseignant, je veux créer des cours pour enseigner les élèves à distance.
 En tant qu'enseignant, je veux attribuer chaque cours à une classe.
 En tant qu’enseignant, je veux attribuer des devoirs pour aider les élèves à pratiquer le cours.
 En tant qu'enseignant, je veux attribuer des quiz pour évaluer le niveau de compréhension des apprenants.
 En tant qu'enseignant, je veux consulter les analytiques pour savoir l’avancement de chaque élève.
-Administrateurs
+# Administrateurs
 En tant qu’administrateur, je veux créer des comptes pour les attribuer aux utilisateurs et pour préciser qui peut accéder aux classes de notre école.
 En tant qu’administrateur, je veux créer des classes pour regrouper les élèves de chaque classe.
 En tant qu’administrateur, je veux consulter le niveau d’apprentissage des élèves et l’avancement de chaque classe.
 
-Architecture Technique
+## Architecture Technique
 L'application sera construite en utilisant une architecture moderne de type MVC (Modèle-Vue-Contrôleur) pour assurer une séparation claire des préoccupations. Les technologies suivantes seront utilisées :
-Front-End:
+# Front-End:
 Technologies: React, CSS
 Description: React est utilisé pour la création d'interfaces utilisateur dynamiques et réactives. CSS est utilisé pour le style et la mise en page.
-Back-End:
+# Back-End:
 Technologies: Flask
 Description: Flask, un micro-framework Python, est utilisé pour la gestion de la logique métier, la gestion des requêtes HTTP, et la connexion à la base de données.
-Base de Données:
+# Base de Données:
 Technologie: MySQL
 Description: MySQL est utilisé pour le stockage des données de l'application, y compris les informations sur les utilisateurs, les cours, les quiz, et les résultats.
-Hébergement:
+# Hébergement:
 Service: AWS (Amazon Web Services)
 Description: AWS est utilisé pour l'hébergement de l'application, offrant une infrastructure scalable et fiable.
 
 
-Conclusion
+# Conclusion
 Cette documentation fournit une vue d'ensemble des fonctionnalités et des exigences techniques de l'application web éducative. Elle sert de guide pour le développement et la mise en œuvre d'une plateforme efficace et sécurisée qui répond aux besoins des enseignants et des élèves. Pour toute question ou pour plus de détails techniques, veuillez contacter l'équipe de développement.
 
 # Getting Started with Create React App
