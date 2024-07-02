@@ -1,3 +1,6 @@
+This file is to be left non funtionnal as the RENDER server handles Autodeployment by default automatically;
+in case you want to change to manual autodeployment add a " .yaml " and provide the " secrets Service ID and API key "
+and finally remove this and the text above before saving 
 name: Trigger Render Deployment
 on:
   push:
