@@ -24,8 +24,6 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Install Eslint manually
-      run: npm install --save-dev @babel/plugin-proposal-private-property-in-object
 
     - name: Build React app
       run: npm run build
