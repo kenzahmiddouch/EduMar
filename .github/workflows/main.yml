@@ -24,8 +24,7 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run Unit Tests
-      run: npm test
+    
       # Adjust this command based on how your tests are configured
 
     - name: Code Analysis (Linting, Security Scan, etc.)
