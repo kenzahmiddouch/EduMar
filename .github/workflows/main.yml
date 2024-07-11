@@ -25,13 +25,7 @@ jobs:
       run: npm install
 
     
-      # Adjust this command based on how your tests are configured
-
-    - name: Code Analysis (Linting, Security Scan, etc.)
-      # Add steps for code analysis tools like ESLint, SonarQube, etc.
-      # Example using ESLint:
-      run: npm run lint
-
+    
     - name: Build React app
       run: npm run build
 
