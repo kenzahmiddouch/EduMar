@@ -1,4 +1,3 @@
-// src/components/classroom/ClassroomInterface.js
 import React, { useState } from 'react';
 import './AddCourse.css';
 
@@ -23,7 +22,6 @@ function ClassroomInterface() {
   };
 
   return (
-    
     <div className="ClassroomInterface">
       <nav className="navbar">
         <button className={activeTab === 'flux' ? 'active' : ''} onClick={() => setActiveTab('flux')}>Flux</button>
@@ -38,7 +36,7 @@ function ClassroomInterface() {
             <button className="create-button" onClick={handleCreate}>+ Créer</button>
             {showCreateDropdown && (
               <div className="dropdown">
-                <button onClick={handleCreateDevoir}>Devoir</button>
+               <center><button onClick={handleCreateDevoir}>Devoir</button></center> 
                 <button>Question</button>
               </div>
             )}
@@ -47,7 +45,7 @@ function ClassroomInterface() {
         </div>
       )}
 
-{activeTab === 'flux' && (
+      {activeTab === 'flux' && (
         <div className="content">
           <AssignmentList assignments={assignments} />
         </div>
@@ -75,10 +73,15 @@ function AssignmentList({ assignments }) {
 function AssignmentForm({ onSubmit, onCancel }) {
   const [title, setTitle] = useState('');
   const [instructions, setInstructions] = useState('');
+  const [file, setFile] = useState(null);
+
+  const handleFileChange = (e) => {
+    setFile(e.target.files[0]);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit({ title, instructions });
+    onSubmit({ title, instructions, file });
   };
 
   return (
@@ -92,18 +95,15 @@ function AssignmentForm({ onSubmit, onCancel }) {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
-          <div className="text-editor">
-            <div className="toolbar">
-              <button type="button">B</button>
-              <button type="button">I</button>
-              <button type="button">U</button>
-              <button type="button">≡</button>
-              <button type="button">X</button>
-            </div>
-            <textarea
-              placeholder="Instructions (facultatif)"
-              value={instructions}
-              onChange={(e) => setInstructions(e.target.value)}
+          <textarea
+            placeholder="Instructions (facultatif)"
+            value={instructions}
+            onChange={(e) => setInstructions(e.target.value)}
+          />
+          <div className="file-upload">
+            <input
+              type="file"
+              onChange={handleFileChange}
             />
           </div>
           <div className="form-actions">

@@ -14,8 +14,8 @@
 .dashboard {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto%;
   margin: 0; /* Ensure no margins */
   padding: 0; /* Ensure no padding */
 }

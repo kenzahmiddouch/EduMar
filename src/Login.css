@@ -14,18 +14,22 @@ body {
     align-items: center;  /* Added to center vertically */
     width: 100%;
     max-width: 1000px;
-    height: 100vh;  /* Adjusted to make the container full height */
+    height: fit-content;  /* Adjusted to make the container full height */
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    margin: auto; 
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 1%;
+    
+    
      /* Added to center horizontally */
 }
 
 
 .login-form {
-    padding: 30px;
+    padding: 20px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -53,7 +57,7 @@ button {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #f05adc;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
