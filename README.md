@@ -48,7 +48,7 @@ Description: Flask, un micro-framework Python, est utilisé pour la gestion de l
 Technologie: MySQL
 Description: MySQL est utilisé pour le stockage des données de l'application, y compris les informations sur les utilisateurs, les cours, les quiz, et les résultats.
 ### #Hébergement:
-Service: AWS (Amazon Web Services)
+Service: Render
 Description: AWS est utilisé pour l'hébergement de l'application, offrant une infrastructure scalable et fiable.
 
 
